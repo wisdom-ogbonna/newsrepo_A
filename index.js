@@ -19,8 +19,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
 
-
-mongoose.connect('mongodb://localhost:27017/software-blogging2')
+mongoose.connect('mongodb+srv://blog:jcNS4IsdChTc4qmc@cluster0.lzcghw9.mongodb.net/?retryWrites=true&w=majority')
     .then(() => {
         console.log("conected successfully")
     }).catch((err) => {
